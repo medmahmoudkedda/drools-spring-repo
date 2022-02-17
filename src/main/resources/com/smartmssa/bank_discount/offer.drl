@@ -28,5 +28,6 @@ rule "Crediter compte"
     when
         crediterCompteObject: CrediterCompte(operateur=="mauritel" && credit>10000)
     then
+        System.out.println("================Mauritel tax has been updated for this transaction============");
         crediterCompteObject.setTax(10);
 end
