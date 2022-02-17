@@ -4,7 +4,7 @@ import com.smartmssa.bank_discount.Order;
 
 rule "HDFC"
     when
-        orderObject: Order(cardType=="HDFC" && price>1000)
+        orderObject: Order(cardType=="HDFC" && price>100000)
     then
         orderObject.setDiscount(20);
 end
