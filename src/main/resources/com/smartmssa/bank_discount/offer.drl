@@ -5,7 +5,7 @@ import com.smartmssa.bank_discount.Ordre;
 rule "HDFC"
 
 when
-orderObject : Order(cardType=="HDFC" && price>10000);
+orderObject : Order(cardType=="HDFC" && price>10000)
 then
 orderObject.setDiscount(20);
 end;
@@ -13,7 +13,7 @@ end;
 rule "ICICI"
 
 when
-orderObject : Order(cardType=="ICICI" && price>15000);
+orderObject : Order(cardType=="ICICI" && price>15000)
 then
 orderObject.setDiscount(8);
 end;
@@ -21,7 +21,7 @@ end;
 rule "DBS"
 
 when
-orderObject : Order(cardType=="DBS" && price>15000);
+orderObject : Order(cardType=="DBS" && price>15000)
 then
 orderObject.setDiscount(15);
 end;
