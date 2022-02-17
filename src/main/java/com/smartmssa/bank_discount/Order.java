@@ -6,12 +6,54 @@ package com.smartmssa.bank_discount;
 
 public class Order implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Order() {
-    }
+	private java.lang.String name;
+	private java.lang.String cardType;
+	private int discount;
+	private int price;
 
+	public Order() {
+	}
 
+	public java.lang.String getName() {
+		return this.name;
+	}
 
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public java.lang.String getCardType() {
+		return this.cardType;
+	}
+
+	public void setCardType(java.lang.String cardType) {
+		this.cardType = cardType;
+	}
+
+	public int getDiscount() {
+		return this.discount;
+	}
+
+	public void setDiscount(int discount) {
+		this.discount = discount;
+	}
+
+	public int getPrice() {
+		return this.price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
+	public Order(java.lang.String name, java.lang.String cardType,
+			int discount, int price) {
+		this.name = name;
+		this.cardType = cardType;
+		this.discount = discount;
+		this.price = price;
+	}
 
 }
