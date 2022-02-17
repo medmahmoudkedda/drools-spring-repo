@@ -28,5 +28,5 @@ rule "Crediter compte"
     when
         creitercpte: CrediterCompte(operateur=="mauritel" && credit>=10000)
     then
-        creitercpte.setTax(10)
+        creitercpte.setTax(10);
 end
