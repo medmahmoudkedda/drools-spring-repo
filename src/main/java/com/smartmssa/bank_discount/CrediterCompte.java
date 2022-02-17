@@ -6,12 +6,54 @@ package com.smartmssa.bank_discount;
 
 public class CrediterCompte implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public CrediterCompte() {
-    }
+	private java.lang.String code;
+	private java.lang.String operateur;
+	private int credit;
+	private int tax;
 
+	public CrediterCompte() {
+	}
 
+	public java.lang.String getCode() {
+		return this.code;
+	}
 
+	public void setCode(java.lang.String code) {
+		this.code = code;
+	}
+
+	public java.lang.String getOperateur() {
+		return this.operateur;
+	}
+
+	public void setOperateur(java.lang.String operateur) {
+		this.operateur = operateur;
+	}
+
+	public int getCredit() {
+		return this.credit;
+	}
+
+	public void setCredit(int credit) {
+		this.credit = credit;
+	}
+
+	public int getTax() {
+		return this.tax;
+	}
+
+	public void setTax(int tax) {
+		this.tax = tax;
+	}
+
+	public CrediterCompte(java.lang.String code, java.lang.String operateur,
+			int credit, int tax) {
+		this.code = code;
+		this.operateur = operateur;
+		this.credit = credit;
+		this.tax = tax;
+	}
 
 }
