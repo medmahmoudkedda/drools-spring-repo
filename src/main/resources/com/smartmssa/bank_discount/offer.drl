@@ -1,5 +1,5 @@
 package com.smartmssa.bank_discount;
-import com.smartmssa.bank_discount.Ordre;
+import com.smartmssa.bank_discount.Order;
 
 
 rule "HDFC"
