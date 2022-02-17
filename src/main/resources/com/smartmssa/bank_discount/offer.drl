@@ -1,6 +1,7 @@
 package com.smartmssa.bank_discount;
 import com.smartmssa.bank_discount.Order;
 
+import com.smartmssa.bank_discount.CrediterCompte;
 
 rule "HDFC"
     when
@@ -23,3 +24,9 @@ rule "DBS"
         orderObject.setDiscount(15);
 end
 
+rule "Crediter compte"
+    when
+        creitercpte: CrediterCompte(operateur=="mauritel" && credit>=10000)
+    then
+        creitercpte.setTax(10)
+end
