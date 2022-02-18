@@ -1,0 +1,9 @@
+package com.smartmssa.bank_discount;
+
+import java.lang.Number;
+
+rule "offer"
+	dialect "mvel"
+	when
+	then
+end
