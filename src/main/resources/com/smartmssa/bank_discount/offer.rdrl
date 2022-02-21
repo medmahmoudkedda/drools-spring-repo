@@ -6,6 +6,7 @@ rule "offer"
 	dialect "mvel"
 	when
 		order : Order( cardType == "\"HDFC\"" && price > 10000 )
+		CrediterCompte( )
 	then
 		order.setDiscount( 25 );
 end
